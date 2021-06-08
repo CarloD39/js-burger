@@ -10,79 +10,154 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <h1>Create your Burger</h1>
-    </div>
 
-    <div class="container">
-        <div>
-            <form action="">
-                <input placeholder="Name your Burger" type="text">
-            </form>
+    <div class="main-container">
+
+        <div class=" top-bar section">
+            <div class="container top-title pad-left">
+                <div class="row">
+                    <div class="col-10 title-burger">
+                        <h2>Create your Burger</h2>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="burger-img">
+                            <img src="img/burger-top.png" alt="">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="container section pad-left">
+            <div class="row">
+                <div class="col-12">
+                    <form action="">
+                        <input placeholder="Name your Burger" type="text">
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h3>Ingredients</h3>
+        <div class="container section pad-left">
+            <div class="title-ingredients">
+                <h4>Ingredients</h4>
+            </div>
+            
+            <div class="row">
 
-            <form>
-                <input type="checkbox" id="check-item1"
-                 class="somma-check"
-                 value="1">
-                <label for="check-item1">Cheese</label>
+                <div class="col-6">
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/cheese.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item1"
+                        class="somma-check"
+                        value="1">
+                        <label for="check-item1">Cheese</label>        
+                    </form>
+                </div>
 
-                <input type="checkbox" id="check-item2"
-                 class="somma-check"
-                 value="3">
-                <label for="check-item2">Egg</label>
+                <div class="col-6">
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/tomato.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item2"
+                        class="somma-check"
+                        value="3">
+                        <label for="check-item2">Tomato</label>
+                    </form>
+                </div>
 
-                <input type="checkbox" id="check-item3"
-                 class="somma-check"
-                 value="1">
-                <label for="check-item3">Mustard</label>
+                <div class="col-6">
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/fried-egg.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item3"
+                        class="somma-check"
+                        value="2">
+                        <label for="check-item3">Egg</label>
+                    </form>
+                </div>
 
-                <input type="checkbox" id="check-item4"
-                 class="somma-check"
-                 value="3">
-                <label for="check-item4">Tomato</label>
+                <div class="col-6">
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/lettuce.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item4"
+                        class="somma-check"
+                        value="3">
+                        <label for="check-item4">Lettuce</label>
+                    </form>
+                </div>
 
-                <input type="checkbox" id="check-item5"
-                 class="somma-check"
-                 value="3">
-                <label for="check-item5">Lettuce</label>
+                <div class="col-6">
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/mustard.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item5"
+                        class="somma-check"
+                        value="1">
+                        <label for="check-item5">Mustard</label>
+                    </form>
+                </div>
 
-                <input type="checkbox" id="check-item6"
-                 class="somma-check"
-                 value="1">
-                <label for="check-item6">Ketchup</label>
-            </form>
+                <div class="col-6">                       
+                    <form action="">
+                        <div class="item-img">
+                            <img src="img/ketchup.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="check-item6"
+                        class="somma-check"
+                        value="1">
+                        <label for="check-item6">Tomato</label>
+                    </form>
+                </div>
 
-            <hr>
-
-            <form>
-                <button id="button-discount">Discount Coupon</button>
-                <input placeholder= "232fewfe2" type="text"
-                 id="check-discount-item">
-            </form>
-
-            <hr>
-            <button id="somma-button">calculate</button>
-
-            <hr>
-
-            <div id="final-price">
 
             </div>
 
-
         </div>
 
+        <div class="container section pad-left">
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <span id="button-discount">Discount Coupon</span>
+                        <input placeholder= "232fewfe2" type="text"
+                         id="check-discount-item">
+                    </form>
+                </div>
+
+                <div class="row align-center">
+                    <div class="col-12">
+                        <button id="somma-button">calculate</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="bottom-bar container">
+            <div class="row">
+                <div class="col-6 white-bottom">
+                    <span>Your Price</span>
+                </div>
+                <div class="col-6 align-end white-bottom">
+                    <span id="final-price"></span>
+                </div>
+            </div>
+
+        </div>
+                 
+       
     </div>
-
-
-
-
-
+    
 
     <script type="text/javascript" src="js/script.js"></script>
 
